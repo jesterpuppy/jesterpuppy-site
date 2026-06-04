@@ -19,33 +19,12 @@ Why build it? To experiment, to show off my Godot and Luau projects, and to have
 ### ✧ Features
 - **Custom UI:** Handcrafted CSS with glassmorphism, aggressive borders, and smooth hover-gradients.
 - **Interactive Music Player:** A fully functional, slide-out brutalist music player.
-- **Typewriter Synchronization:** Perfectly timed, dual-typewriter effects that seamlessly loop.
+- **Typewriter Animations:** timed, dual-typewriter effects that loop.
 - **Custom Cursors:** A slide-out panel to instantly swap between custom glowing dots and expanding crosses.
 
 ---
 
-### ✧ Fidget Zone
-*A tiny distraction for your cursor...*
-
-<details>
-<summary><b>▸ Open Box 1</b></summary>
-<blockquote>
-<details>
-<summary><b>▸ Open Box 2</b></summary>
-<blockquote>
-<details>
-<summary><b>▸ Open Box 3</b></summary>
-<blockquote>
-<p align="center">
-  <b>:3</b><br>
-  <i>(stay silly be weird)</i>
-</p>
-</blockquote>
-</details>
-</blockquote>
-</details>
-</blockquote>
-</details>
+wruff! wruff!
 
 <br><br><br><br>
 
