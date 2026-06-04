@@ -1,0 +1,344 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jester &lt;3</title>
+  <!-- Red heart SVG favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+  <meta name="description" content="Jester's personal page." />
+  <meta property="og:title" content="Jester &lt;3" />
+  <meta property="og:description" content="19 • femboy • godot dev • roblox executor • suburban explorer" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Mochiy+Pop+One&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="no-scroll">
+
+  <!-- Cursor -->
+  <div id="cur"></div>
+
+  <!-- Animated background -->
+  <div class="bg-canvas">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+  </div>
+  <div class="bg-grid"></div>
+
+  <!-- ── LANDING ── -->
+  <div id="landing">
+    <div class="land-logo">Jester</div>
+    <div class="land-divider"></div>
+    <button class="land-enter" id="enterBtn">Click to continue</button>
+  </div>
+
+  <!-- ── MAIN ── -->
+  <div id="main">
+
+    <!-- ── CURSOR MENU ── -->
+    <div id="cursor-wrap">
+      <div id="cursor-tab">
+        <!-- SVG cursor icon -->
+        <svg viewBox="0 0 24 24">
+          <path d="M7 2l12 11.2-5.8.5 3.3 7.3-2.2.9-3.2-7.4-4.4 4.7z" />
+        </svg>
+      </div>
+      <div id="cursor-panel">
+        <div id="cp-label">CURSOR</div>
+        <div class="cp-controls">
+          <button class="cp-btn" onclick="setCursor('dot')">Dot</button>
+          <button class="cp-btn" onclick="setCursor('x')">Cross</button>
+          <button class="cp-btn" onclick="setCursor('default')">Default</button>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <div class="nav-inner"
+        style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; width: 100%; align-items: baseline;">
+        <div
+          style="text-align: right; font-size: clamp(.65rem,1.4vw,.8rem); color: var(--muted); font-weight: 400; letter-spacing: 0.04em;">
+          random quote</div>
+        <div style="text-align: left; font-size: clamp(.65rem,1.4vw,.8rem);"><span id="nav-tw"
+            style="color: var(--text); font-family: 'Mochiy Pop One', sans-serif; font-weight: 500;"></span><span
+            class="hero-caret"></span></div>
+      </div>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section id="hero">
+      <div class="char-wrap left">
+        <div class="char-glow"></div>
+        <img class="char-img" src="images/IMG_3571.png" alt="Character" draggable="false" />
+      </div>
+      <div class="char-wrap right">
+        <div class="char-glow"></div>
+        <img class="char-img" src="images/IMG_3657.png" alt="Character" draggable="false" />
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-meta">
+          <div class="hero-views">
+            <div class="hero-views-dot"></div>
+            <span id="viewTxt">... VIEWS</span>
+          </div>
+          <div class="hero-time" id="timeTxt">TIME • --:--:-- --</div>
+        </div>
+        <h1 class="hero-heading hover-gradient-text">i'm Jester :3</h1>
+        <div class="hero-sub"
+          style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; width: 100%; align-items: baseline;">
+          <div style="text-align: right;">i am</div>
+          <div style="text-align: left;"><span class="hero-tw" id="tw"></span><span class="hero-caret"></span></div>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <span>Scroll Down</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <hr class="full-sep" />
+
+    <!-- ── ABOUT ── -->
+    <div class="section about-section">
+      <div class="about-flex">
+        <div class="about-text-col">
+          <div class="sec-label reveal">About Me</div>
+          <h2 class="sec-title hover-gradient-text reveal reveal-d1">Who am i?</h2>
+          <p class="sec-body reveal reveal-d2">
+            I'm a <strong>19 year old femboy</strong> and indie game creator based in Denmark.
+            My main engine is <strong>Godot</strong>, though I experiment with <strong>Unity</strong> too —
+            I've built several projects that aren't public yet, still working on them.
+            I also developed my own <strong>executor for Roblox</strong> and written custom scripts for it.
+            None are perfect — I'm still learning — but it's mine and I'm having fun :3
+          </p>
+          <p class="sec-body reveal reveal-d3">
+            Outside of code: <strong>gaming</strong>, <strong>suburban exploration</strong>, and being silly.
+            I genuinely love being alone, wandering places that are abandoned makes me feel like life matters.
+            Most importantly — I have a partner — <strong>Envy</strong> who means everything to me &#x2665;
+          </p>
+        </div>
+        <div class="about-img-col reveal reveal-d2">
+          <img src="images/image5.png" alt="Jester" class="about-img" />
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card reveal reveal-d1">
+          <div class="card-icon-bar"></div>
+          <div class="card-title">Game Development</div>
+          <div class="card-text">Building games in Godot and Unity. Several non-public projects i work on.</div>
+        </div>
+        <div class="card reveal reveal-d2">
+          <div class="card-icon-bar"></div>
+          <div class="card-title">Roblox & Scripting</div>
+          <div class="card-text">Developed my own Roblox executor and wrote scripts for games such as Rivals. Still
+            learning.</div>
+        </div>
+        <div class="card reveal reveal-d3">
+          <div class="card-icon-bar"></div>
+          <div class="card-title">Exploration</div>
+          <div class="card-text">Suburban exploration, solitude. I find it calming to be in forgotten places and empty
+            streets at night.</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="full-sep" />
+
+    <!-- ── EXPERIENCE ── -->
+    <div class="section">
+      <div class="sec-label reveal">Experience</div>
+      <h2 class="sec-title hover-gradient-text reveal reveal-d1">What I've Built</h2>
+      <div class="exp-list">
+        <div class="exp-item reveal reveal-d1">
+          <div class="exp-role">Indie Game Developer</div>
+          <div class="exp-where">Personal Projects</div>
+          <div class="exp-date">2021-2025</div>
+          <div class="exp-desc">
+            Designing and creating games in Godot, exploring Unity on the side.
+            Several projects such as platformers and other indie games :3
+          </div>
+          <div class="tags">
+            <span class="tag">Godot</span>
+            <span class="tag">GDScript</span>
+            <span class="tag">Unity</span>
+          </div>
+        </div>
+        <div class="exp-item reveal reveal-d2">
+          <div class="exp-role">Roblox & Executor Developer</div>
+          <div class="exp-where">Personal</div>
+          <div class="exp-date">2023 • 2026</div>
+          <div class="exp-desc">
+            Made a custom Roblox executor and wrote plenty scripts.
+            Still having fun with it, taking a small break though.
+          </div>
+          <div class="tags">
+            <span class="tag">Luau</span>
+            <span class="tag">Roblox Studio</span>
+            <span class="tag">Kernel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="full-sep" />
+
+    <!-- ── LINKS ── -->
+    <div class="section">
+      <div class="sec-label reveal">Links</div>
+      <h2 class="sec-title hover-gradient-text reveal reveal-d1">Find Me Here Wruff!</h2>
+      <div class="links-grid">
+
+        <!-- Discord -->
+        <a class="link-card reveal reveal-d1" href="https://discord.com/users/jestercat808" target="_blank"
+          rel="noopener">
+          <div class="link-icon-wrap">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z" />
+            </svg>
+          </div>
+          <div>
+            <div class="link-name">Discord</div>
+            <div class="link-sub">@jestercat808</div>
+          </div>
+        </a>
+
+        <!-- Roblox -->
+        <a class="link-card reveal reveal-d2" href="https://www.roblox.com/users/7421851388/profile" target="_blank"
+          rel="noopener">
+          <div class="link-icon-wrap">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M4.403 3.006 1 20.238 19.597 24 23 6.762 4.403 3.006zm8.498 11.33-2.318-.49 1.208-5.711 2.317.49-1.207 5.71z" />
+            </svg>
+          </div>
+          <div>
+            <div class="link-name">Roblox</div>
+            <div class="link-sub">@CookieThePookies</div>
+          </div>
+        </a>
+
+        <!-- Steam -->
+        <a class="link-card reveal reveal-d1" href="https://steamcommunity.com/profiles/76561198262922451/"
+          target="_blank" rel="noopener">
+          <div class="link-icon-wrap">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.497 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z" />
+            </svg>
+          </div>
+          <div>
+            <div class="link-name">Steam</div>
+            <div class="link-sub">@Jester &lt;3</div>
+          </div>
+        </a>
+
+        <!-- Email -->
+        <a class="link-card reveal reveal-d2" href="mailto:jester@angelic.dog" target="_blank" rel="noopener">
+          <div class="link-icon-wrap">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.908 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+            </svg>
+          </div>
+          <div>
+            <div class="link-name">Email</div>
+            <div class="link-sub">jester@angelic.dog</div>
+          </div>
+        </a>
+
+        <!-- Spotify -->
+        <a class="link-card reveal reveal-d1"
+          href="https://open.spotify.com/user/31qg27mtjvgzsm6kj234kgk5sp74?si=63510955a7354489" target="_blank"
+          rel="noopener">
+          <div class="link-icon-wrap">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.45 17.34c-.22.36-.68.48-1.04.26-2.85-1.74-6.43-2.14-10.65-1.17-.41.09-.82-.16-.92-.57-.09-.41.16-.82.57-.92 4.61-1.05 8.6-.61 11.78 1.34.35.21.47.67.26 1.06zm1.44-3.23c-.27.44-.85.58-1.3.31-3.26-2.01-8.23-2.61-11.96-1.43-.5.16-1.02-.13-1.18-.63-.16-.5.13-1.02.63-1.18 4.26-1.35 9.77-.67 13.5 1.63.44.27.58.85.31 1.3zm.12-3.39C15.01 8.35 8.74 8.14 5.09 9.25c-.59.18-1.21-.15-1.39-.74-.18-.59.15-1.21.74-1.39 4.23-1.29 11.16-1.05 15.82 1.71.52.31.69 1 .38 1.52-.31.52-1 .69-1.52.38z" />
+            </svg>
+          </div>
+          <div>
+            <div class="link-name">Spotify</div>
+            <div class="link-sub">@Jester &lt;3</div>
+          </div>
+        </a>
+
+        <!-- YouTube -->
+        <a class="link-card reveal reveal-d2" href="https://www.youtube.com/@JesterCat4" target="_blank" rel="noopener">
+          <div class="link-icon-wrap">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.376.55 9.376.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+          </div>
+          <div>
+            <div class="link-name">YouTube</div>
+            <div class="link-sub">@Jester &lt;3</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <footer>
+      <div class="foot-name">End of page</div>
+      <div class="foot-tag-wrap">
+        <div class="foot-tag">stay silly be weird bai bai &#9829;</div>
+        <img src="images/image6.png" class="foot-goodbye-img" alt="rawr" />
+      </div>
+    </footer>
+  </div><!-- end #main -->
+
+  <!-- ── MUSIC PLAYER ── -->
+  <div id="music-wrap">
+    <div id="music-tab">
+      <div class="mp-tab-bar"></div>
+      <div class="mp-tab-bar"></div>
+      <div class="mp-tab-bar"></div>
+    </div>
+    <div id="music-player">
+      <div id="mp-header">
+        <div id="mp-label">PLAYER</div>
+        <div id="mp-count">0 TRACKS</div>
+      </div>
+      <div id="mp-now">
+        <div id="mp-title">...</div>
+        <div id="mp-sub">Ready to play</div>
+      </div>
+      <div id="mp-seek-wrap">
+        <div id="mp-seek-fill"></div>
+      </div>
+      <div id="mp-times">
+        <span id="mp-elapsed">0:00</span>
+        <span id="mp-dur">0:00</span>
+      </div>
+      <div id="mp-controls">
+        <button id="mp-prev">⏮</button>
+        <button id="mp-play">▶</button>
+        <button id="mp-next">⏭</button>
+      </div>
+      <div id="mp-vol-row">
+        <span id="mp-vol-lbl">VOL</span>
+        <div id="mp-vol-track">
+          <div id="mp-vol-fill"></div>
+        </div>
+        <span id="mp-vol-pct">70%</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
