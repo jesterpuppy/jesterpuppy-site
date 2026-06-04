@@ -3,7 +3,7 @@
 # ⋆⁺₊⋆ jester ⋆⁺₊⋆
 
 <p align="center">
-  <b>A personal playground & portfolio.</b> <br>
+  <b>A personal portfolio.</b> <br>
   <i>Sleek • Brutalist • Cute</i>
 </p>
 
